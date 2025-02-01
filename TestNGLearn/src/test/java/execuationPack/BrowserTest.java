@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -18,6 +19,7 @@ public class BrowserTest {
 		startTime = System.currentTimeMillis();
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\jacki\\Downloads\\Compressed\\chromedriver-win64\\chromedriver.exe");
+		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

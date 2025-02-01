@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,7 +14,9 @@ public class ParallelExample {
 	public void flipkart() {
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\jacki\\Downloads\\Compressed\\chromedriver-win64\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions options= new ChromeOptions();
+		options.setHeadless(true);
+		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://www.flipkart.com/");
@@ -25,7 +28,9 @@ public class ParallelExample {
 		
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\jacki\\Downloads\\Compressed\\chromedriver-win64\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions options= new ChromeOptions();
+		options.setHeadless(true);
+		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.get("https://www.amazon.in/");
@@ -36,7 +41,9 @@ public class ParallelExample {
 	public void snapDeal() {
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\jacki\\Downloads\\Compressed\\chromedriver-win64\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions options= new ChromeOptions();
+		options.setHeadless(true);
+		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://snapdeal.com/");
@@ -47,7 +54,9 @@ public class ParallelExample {
 	public void flipkart2() {
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\jacki\\Downloads\\Compressed\\chromedriver-win64\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions options= new ChromeOptions();
+		options.setHeadless(true);
+		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://www.flipkart.com/");
@@ -58,7 +67,9 @@ public class ParallelExample {
 	public void amzone2() {
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\jacki\\Downloads\\Compressed\\chromedriver-win64\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions options= new ChromeOptions();
+		options.setHeadless(true);
+		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.get("https://www.amazon.in/");
@@ -69,7 +80,9 @@ public class ParallelExample {
 	public void snapDeal2() {
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\jacki\\Downloads\\Compressed\\chromedriver-win64\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions options= new ChromeOptions();
+		options.setHeadless(true);
+		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://snapdeal.com/");

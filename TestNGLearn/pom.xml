@@ -14,6 +14,16 @@
                     <target>11</target>
                 </configuration>
             </plugin>
+             <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version>
+        <configuration>
+          <includes>
+            <include>parallelExample.xml</include>
+          </includes>
+        </configuration>
+      </plugin>
         </plugins>
     </build>
     <dependencies>
@@ -43,6 +53,7 @@
     <version>7.9.0</version>
     <scope>test</scope>
 </dependency>
+
 
 
   </dependencies>
